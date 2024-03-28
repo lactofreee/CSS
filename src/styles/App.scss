@@ -1,0 +1,44 @@
+@import './reset.scss';
+
+:root {
+  background-color: #DCE6D2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.phone {
+  background-color: black;
+  border-radius: 50px;
+  height: 95vh;
+  width: 420px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+  .header__list {
+    display: flex;
+    color: white;
+    gap: 10px;
+    width: max-content;
+    .header__list-item {
+      border: 1px solid rgba($color: #fff, $alpha: 0.5);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .header__list-item--inverted{
+      background-color: white;
+      color: black;
+    }
+  } 
+}
+
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
