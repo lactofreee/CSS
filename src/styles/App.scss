@@ -35,10 +35,19 @@
     color: white;
     gap: 10px;
     width: max-content;
+    
     .header__list-item {
       border: 1px solid rgba($color: #fff, $alpha: 0.5);
       border-radius: 20px;
       padding: 10px;
+      &:hover {
+        background-color: #374151;
+      }
+      &:first-child {
+        &:hover {
+          background-color: #e6e6e6;
+        }
+      }
     }
     .header__list-item--inverted{
       background-color: white;
@@ -66,6 +75,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: 0.2s;
+    }
     .card__title {
       font-size: 32px;
     }
